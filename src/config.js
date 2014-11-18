@@ -6,6 +6,7 @@ module.exports = function (config){
     config.vendors.prefix.push(Path.resolve(__dirname, '../node_modules'));
 
     config.vendors.js = (config.vendors.js || []).concat([
+        'hammerjs/hammerjs.min.js',
         'angular-material-builds/angular-material.min.js',
     ]);
     config.vendors.css = (config.vendors.css || []).concat([
