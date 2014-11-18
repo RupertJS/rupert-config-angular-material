@@ -1,0 +1,31 @@
+{
+  "name": "rupert-config-angular-material",
+  "version": "0.0.0",
+  "description": "Rupert configuration to use Angular Material.",
+  "repository": "git@github.com:DavidSouther/rupert-config-angular-material.git",
+  "main": "src/config.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require should --compilers coffee:coffee-script/register"
+  },
+  "keywords": [
+    "rupert",
+    "config",
+    "angular",
+    "material"
+  ],
+  "author": "David Souther <davidsouther@gmail.com> (https://davidsouther.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "angular-material-builds": "^0.5.0",
+    "angular-ui-router": "^0.2.11",
+    "rupert-config-angular": "0.0.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "grunt": "^0.4.5",
+    "grunt-release": "^0.7.0",
+    "mocha": "^2.0.1",
+    "rupert": "^0.2.5",
+    "should": "^4.1.0"
+  }
+}
