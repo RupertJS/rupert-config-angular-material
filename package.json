@@ -1,6 +1,6 @@
 {
   "name": "rupert-config-angular-material",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rupert configuration to use Angular Material.",
   "repository": "git@github.com:DavidSouther/rupert-config-angular-material.git",
   "main": "src/config.js",
