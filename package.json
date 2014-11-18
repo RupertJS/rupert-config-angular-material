@@ -17,8 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "angular-material-builds": "^0.5.0",
-    "angular-ui-router": "^0.2.11",
-    "rupert-config-angular": "0.0.3"
+    "rupert-config-angular": "0.0.4"
   },
   "devDependencies": {
     "coffee-script": "^1.8.0",

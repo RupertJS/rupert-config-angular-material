@@ -17,7 +17,7 @@ describe 'Rupert Config Angular', ->
     rupert = require('rupert')(config)
 
     it 'attaches files to the config from Angular', ->
-      config.stassets.vendors.js.length.should.equal 9
+      config.stassets.vendors.js.length.should.equal 10
 
     it 'registers Angular file types', ->
       config.stassets.scripts.types.length.should.equal 6
