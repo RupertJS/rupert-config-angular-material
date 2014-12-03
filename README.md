@@ -1,7 +1,7 @@
 ## Rupert Angular Material
 
 Includes the still-experimental Angular Material themes, as well as all of
-[rupert-config-angular](https://npmjs.org/package/rupert-config-angular).
+[rupert-config-angular](https://npmjs.org/package/rupert-config-angular). (If you're getting started, you probably want [Rupert](https://github.com/RupertJS/rupert#rupert) itself.)
 
 ![Rupert Angular](https://cdn.rawgit.com/DavidSouther/rupert/master/src/assets/logos/Rupert_Angular.svg)
 
