@@ -1,25 +1,20 @@
 var Path = require('path');
 
 module.exports = function (config){
-    config = require('rupert-config-angular')(config);
+    require('rupert-plugin-angular')(config);
 
-    config.vendors.prefix.push(Path.resolve(__dirname, '../node_modules'));
+    config.append('stassets.vendors.prefix',
+        Path.resolve(__dirname, '../node_modules')
+    );
 
-    config.vendors.js = (config.vendors.js || []).concat([
+    config.append('stassets.vendors.js', [
         'hammerjs/hammer.min.js',
         'angular-material-builds/angular-material.min.js',
     ]);
-    config.vendors.css = (config.vendors.css || []).concat([
-        'angular-material-builds/angular-material.min.css',
-    ]);
 
-    if (config.material && config.material.themes) {
-        config.material.themes.forEach(function(theme){
-            config.vendors.css.push(
-                'angular-material-builds/themes/' + theme + '-theme.css'
-            );
-        });
-    }
+    config.append('stassets.vendors.css',
+        'angular-material-builds/angular-material.min.css'
+    );
 
     return config;
 };
