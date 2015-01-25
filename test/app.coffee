@@ -21,19 +21,3 @@ describe 'Rupert Config Angular', ->
 
     it 'registers Angular file types', ->
       config.stassets.scripts.types.length.should.equal 6
-
-  describe 'Themes', ->
-    app = null
-    config = clone _config
-    config.stassets.material =
-      themes: [ 'grey' ]
-
-    rupert = require('rupert')(config)
-    config = rupert.config
-    console.log config.find('stassets.material.themes', [])
-
-    beforeEach (done)-> rupert.then -> done()
-
-    it 'loads several themes files', ->
-      # config.find('stassets.material.themes', []).should.deep.equal [ 'grey' ]
-      config.stassets.vendors.css.length.should.equal 2
