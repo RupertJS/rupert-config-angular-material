@@ -12,9 +12,12 @@ module.exports = function (config){
         'angular-material-builds/angular-material.min.js',
     ]);
 
-    config.append('stassets.vendors.css',
+    config.prepend('stassets.vendors.css',
         'angular-material-builds/angular-material.min.css'
     );
 
+
     return config;
 };
+
+module.exports.Gruntfile = require('rupert-plugin-angular').Gruntfile;
