@@ -16,7 +16,7 @@
   "author": "David Souther <davidsouther@gmail.com> (https://davidsouther.com/)",
   "license": "ISC",
   "dependencies": {
-    "angular-material-builds": "v0.8.3",
+    "angular-material-builds": "v0.9.0",
     "hammerjs": "^2.0.4",
     "rupert-plugin-angular": "^0.1.1"
   },
